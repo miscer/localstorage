@@ -1,0 +1,10 @@
+{
+  "name": "localstorage",
+  "repo": "michalmiskernik/localstorage",
+  "description": "Component for saving an object to localStorage",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
