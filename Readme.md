@@ -1,7 +1,7 @@
 
 # localstorage
 
-  
+  Component for saving an object to localStorage.
 
 ## Installation
 
@@ -9,7 +9,14 @@
 
 ## API
 
-   
+    var storage = new Storage('example');
+
+    storage.save({ foo: 'bar' });
+
+    // reload page
+
+    var obj = storage.load();
+    // obj == { foo: 'bar' };
 
 ## License
 
