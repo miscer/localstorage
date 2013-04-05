@@ -5,12 +5,12 @@ function Storage(namespace) {
   this.checkSupport();
 }
 
-Storage.prototype.get = function() {
+Storage.prototype.load = function() {
   var str = localStorage.getItem(this.namespace);
   return str ? JSON.parse(str) : null;
 };
 
-Storage.prototype.set = function(value) {
+Storage.prototype.save = function(value) {
   var str = JSON.stringify(value);
   localStorage.setItem(this.namespace, str);
 };
